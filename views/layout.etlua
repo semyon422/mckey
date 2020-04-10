@@ -1,1 +1,10 @@
-<% content_for("inner") %>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title><%= title %></title>
+	</head>
+	<body>
+		<% content_for("inner") %>
+	</body>
+</html>
