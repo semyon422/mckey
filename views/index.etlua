@@ -1,0 +1,41 @@
+
+<section class="section">
+	<div class="container">
+		<div class="columns">
+			<div class="column is-one-third"></div>
+			<div class="column is-one-third">
+				<form class="box" action="/" method="post">
+					<div class="field">
+						<label class="label">Username</label>
+						<div class="control">
+							<input required name="username" class="input" type="text" placeholder="Steve" maxlength="16">
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">Password</label>
+						<div class="control">
+							<input required name="password" class="input" type="password" placeholder="12345678" maxlength="16">
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label">Key</label>
+						<div class="control">
+							<input required name="key" class="input" type="text" placeholder="" maxlength="32">
+						</div>
+					</div>
+
+					<% if params.message then %>
+						<div class="field">
+							<p class="help"><%= params.message %></p>
+						</div>
+					<% end %>
+
+					<button type="submit" class="button is-primary">Register</button>
+				</form>
+			</div>
+			<div class="column is-one-third"></div>
+		</div>
+	</div>
+</section>

@@ -1,9 +1,10 @@
 local config = require("lapis.config")
 config("development", {
-  mysql = {
-    host = "127.0.0.1",
-    user = "user",
-    password = "password",
-    database = "authme"
-  }
+	port = 8099,
+	mysql = {
+		host = "127.0.0.1",
+		user = "username",
+		password = "password",
+		database = "minecraft"
+	}
 })

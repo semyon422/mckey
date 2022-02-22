@@ -1,0 +1,4 @@
+#!/bin/bash
+. ./setpaths
+$LUAROCKS install lapis
+$LUAROCKS install bcrypt
